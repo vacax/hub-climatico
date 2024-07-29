@@ -17,11 +17,11 @@ Proyecto para recibir las peticiones climáticas de las estaciones en la clase I
 
 ## End Points
 
-Es necesario enviar el header SEGURIDAD_TOKEN con el valor enviado.
+Es necesario enviar el header SEGURIDAD-TOKEN con el valor enviado.
 
 ```
 curl --location 'http://localhost:7000/api/' \
---header 'SEGURIDAD_TOKEN: <<TOKEN>>' \
+--header 'SEGURIDAD-TOKEN: <<TOKEN>>' \
 --header 'Content-Type: application/json' \
 --data '{
     "grupo": "1",
