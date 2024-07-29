@@ -170,7 +170,7 @@ public class Main {
                     ctx.result("Hola mundo HTMX");
                 })
 
-                .ws("/chatroom", wsConfig -> {
+                .ws("/lecturas", wsConfig -> {
 
                     wsConfig.onConnect(wsConnectContext -> {
                         System.out.println("Conectando: "+wsConnectContext.session.toString());

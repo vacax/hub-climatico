@@ -1,11 +1,10 @@
 version: '3.9'
 services:
   hub-climatico:
-    build: ./Dockerfile
+    build: ./
     restart: always
     environment:
-      - URL_MONGO=''
-      - DB_NOMBRE=''
+      - URL_MONGO=
+      - DB_NOMBRE=
     ports:
-      - ${PORT_APP}:7000
-
+      - '${PORT}:7000'
